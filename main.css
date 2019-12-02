@@ -1,0 +1,212 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("https://previews.123rf.com/images/valeriaz/valeriaz1701/valeriaz170101007/69817544-currency-seamless-pattern-dollar-sign-background-texture-with-usd-paper-money-symbols-dark-objects-o.jpg");
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.budgetFeedback {
+  display: none;
+}
+
+#budgetBox, #expenseBox {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 4px solid #1C4220;
+}
+
+#listBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  
+}
+
+.categoryLists {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 25px;
+
+}
+
+h3 {
+  width: 100%;
+  height: 25px;
+  padding: 5px 1px;
+  text-align: center;
+  border-bottom: 1px solid #1C4220;
+  color: #FFF;
+}
+
+h1, h2 {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+  color: #1C4220;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  outline: #1C4220;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  margin-bottom: 20px;
+  background-color: #1C4220;
+  color: #FFF;
+  border-radius: 5px;
+  outline: #1C4220;
+}
+
+span {
+  width: 100%;
+  padding: 5px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  text-align: center;
+}
+
+select {
+  width: 150px;
+  height: 30px;
+  margin-bottom: 20px;
+  background-color: #1C4220;
+  color: #FFF;
+  border: 1px solid;
+  border-radius: 5px;
+  outline: #1C4220;
+}
+
+ul {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-inline-start: 0;
+  color: #FFF;
+  align-items: center;
+}
+
+
+
+
+
+  /* Screen Size 760px + */
+  @media only screen and (min-width:768px) {
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  #budgetBox, #expenseBox, #listBox {
+    width: 33.4%;
+    height: 100vh;
+  }
+
+  #expenseBox {
+    border-left: 5px solid #1C4220;
+    border-right: 5px solid #1C4220;
+  }
+
+  #listBox {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+
+
+  h1, h2 {
+    margin-top: 125px;
+    margin-bottom: 75px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.6)
+  }
+
+
+  input {
+    width: 95%;
+    height: 40px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+  }
+      ::placeholder {
+        color: #FFF;
+      }
+
+
+  button {
+    width: 50%;
+    height: 50px;
+    margin-bottom: 75px;
+    font-size: 20px;
+    background-color: #1C4220;
+    transition: 0.6s;
+  }
+      button:active {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+
+  span {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+
+  select {
+    width: 30%;
+    height: 40px;
+    margin-bottom: 50px;
+    font-size: 15px;
+  }
+
+
+  .categoryLists {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 60vh;
+
+  }
+
+  h3 {
+    font-size: 25px;
+    border-bottom: 2px solid #1C4220;
+  }
+
+  }
